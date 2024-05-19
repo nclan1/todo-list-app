@@ -13,7 +13,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json());
 
-const port = 3000
+const port = process.env.port || 3000
 //retrieves mongodb url using process.env, connection should be stored in .env file
 const mongourl = process.env.MONGO_URL
 //new mongoclient with the mongourl connection

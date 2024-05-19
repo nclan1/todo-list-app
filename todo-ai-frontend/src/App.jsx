@@ -22,7 +22,7 @@ function App() {
     //initiates a http post request to endpoint add-todo
     //endpoint just defines the functionality and the action
     //to be performed
-    fetch('http://localhost:3000/add-todo', {
+    fetch('https://todo-list-app-zeta-liart.vercel.app/add-todo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ function App() {
     let newTasks = [...tasks]
     //splice functions just remove the index
     newTasks.splice(index, 1)
-    fetch('http://localhost:3000/delete-todo', {
+    fetch('https://todo-list-app-zeta-liart.vercel.app/delete-todo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:3000/todos')
+    fetch('https://todo-list-app-zeta-liart.vercel.app/todos')
       .then(res => res.json())
       .then(data => {
         let newTasks = []
