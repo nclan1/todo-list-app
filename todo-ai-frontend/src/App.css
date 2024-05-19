@@ -1,0 +1,59 @@
+
+.seperator {
+    height: 1px;
+    background-color: white;
+    margin: 0 24px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 32px 40px;
+    flex: 1;
+}
+
+.main .todo {
+    background-color: #262223;
+    min-height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 16px;
+    color: #f2efed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .todo .todo-input {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 20px;
+    background-color: #1c1b1d;
+    display: flex;
+    align-items: center;
+}
+
+.main .todo .todo-input input{
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    resize: none;
+    color: #ebe8e6;
+    flex: 1;
+}
+
+.add {
+    width: 50px;
+    border-left: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* TODO: add hover effect over the plus sign */
+/* .add:hover{
+    color: yellow;
+} */

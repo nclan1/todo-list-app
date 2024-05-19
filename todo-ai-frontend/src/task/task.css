@@ -1,0 +1,66 @@
+
+.task {
+    /* background-color: blue; */
+    min-height: 10px;
+    width: 100%;
+    /* matches with text box*/
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* TODO: change color of the text */
+    color: white; 
+    gap: 10px;
+}
+
+.task .container {
+    flex: 1;
+    overflow-wrap: break-word;
+}
+
+.delete {
+    width: 50px;
+    border-left: 2px solid white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.custom-checkbox .checkmark {
+    position: relative;
+    display: flex;
+    width: 13px;
+    height: 13px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    content: "";
+    position: absolute;
+    left: 3.75px;
+    top: 1px;
+    width: 3px;
+    height: 6.5px;
+    border: solid #262223;
+    border-width: 0 3px 3px 0;
+    transition: 0.2s ease;
+    transform: rotate(45deg);
+    
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: white;
+    transition: 0.1s linear;
+}
+
+

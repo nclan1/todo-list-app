@@ -1,0 +1,8 @@
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 24px 40px;
+    font-size: 25px;
+    font-weight: 900;
+}

@@ -1,0 +1,27 @@
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 29px 0;
+    margin-left: 50px;
+    flex: 1;
+}
+
+.info .punchline {
+    color: white;
+}
+
+.info .person {
+    margin-left: 500px;
+}
+
+a {
+    color: #deaf9d;
+}
+a:visited {
+    color: #deaf9d;
+}
+
+a:hover {
+    color: #9dccde;
+}
