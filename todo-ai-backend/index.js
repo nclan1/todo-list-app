@@ -53,7 +53,7 @@ app.post('/add-todo', async (req, res) => {
             res.status(400).json({ message: 'bad request'})
             return
         }
-        todo.checked = false;
+
         await mongoclient.db('todo-list').collection('todo').insertOne(todo)
         res.status(201).json({ message: 'success' })
     } catch (error) {
@@ -80,20 +80,6 @@ app.post('/delete-todo', async(req, res) => {
     }
 })
 
-app.post('/checked-todo', async(req, res) => {
-    try{
-        const { name, checked } = req.body;
-        if (typeof name !== 'string' || typeof checked!== 'boolean') {
-            return res.status(400).json({ message: 'bad request'});
-        }
-
-        await mongoclient.db('todo-list').collection('todo').updateOne({ name }, { $set: { checked } });
-        
-    } catch (error) {
-        console.error(error)
-        res.status(500).json({ message: 'error' })
-    }
-})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

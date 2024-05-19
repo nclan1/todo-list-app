@@ -62,24 +62,7 @@ function App() {
         setTasks(newTasks)
       })
   }, [])
-
-  function updateChecked(index, checked) {
-    const taskToUpdate = tasks[index];
-
-    fetch('https://localhost:3000/checked-todo', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ name: taskToUpdate.name, checked })
-    })
-    .then(res => {
-      const newTasks = tasks.map((task, i) =>
-      i === index ? { ...task, checked } : task
-      );
-      setTasks(newTasks);
-    })
-  }
+  
 
   return (
     <>
@@ -114,7 +97,7 @@ function App() {
           tasks.map((task,index) => (
             //the key is to identify the separate components
             //.map() function just iterates over the task array
-            <Task key={index} name={task} index={index} deletefxn={delTask} checkk={task.checked} updateChecked={updateChecked}/>
+            <Task key={index} name={task} index={index} deletefxn={delTask}/>
           ))
           }
 

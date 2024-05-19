@@ -5,15 +5,9 @@ import { useState } from 'react';
 import { MdDelete } from "../react-icons/md";
 
 
-function Task ({ name, index, deletefxn, updateChecked, checkk }) {
+function Task ({ name, index, deletefxn }) {
 
-    const [checked, setChecked] = useState(checkk);
-
-    const handleCheck = () => {
-        const newCheckedStatus = !checked;
-        setChecked(newCheckedStatus);
-        updateChecked(index, newCheckedStatus);
-    }
+    const [checked, setChecked] = useState(false);
 
     return (
         <div className="task">
@@ -21,7 +15,7 @@ function Task ({ name, index, deletefxn, updateChecked, checkk }) {
             <label className='custom-checkbox'>
                 <input type='checkbox' 
                     checked = {checked}
-                    onChange={handleCheck}
+                    onChange={() => setChecked(!checked)}
                 />
                 <span className='checkmark'></span>
             </label>
