@@ -13,7 +13,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json());
 
-const port = process.env.port || 3000
+const PORT = process.env.PORT || 3000
 //retrieves mongodb url using process.env, connection should be stored in .env file
 const mongourl = process.env.MONGO_URL
 //new mongoclient with the mongourl connection
@@ -81,6 +81,6 @@ app.post('/delete-todo', async(req, res) => {
 })
 
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+app.listen(PORT, () => {
+    console.log(`Example app listening on port ${PORT}`)
 })
