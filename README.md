@@ -1,6 +1,10 @@
 # React Todo List App
 
-A full-stack CRUD (Create, Read, Update, Delete) application built with React, Express, Node.js, and MongoDB. This application allows users to create, view, update, and delete todo items.
+A full-stack CRUD (Create, Read, Update, Delete) application built with React, Express, Node.js, and MongoDB. This application allows users to create, view, update, and delete todo items. Made with Boston University Hack4Impact club! 
+
+You can access it [here](https://todo-list-app-zeta-liart.vercel.app/)
+
+*note: it is linked to one single database so everyone who access it can see the same tasks*
 
 ## Features
 
@@ -16,6 +20,12 @@ A full-stack CRUD (Create, Read, Update, Delete) application built with React, E
 - Node.js
 - MongoDB
 - HTML + CSS + JS
+
+## Known issues / edge cases
+
+- It does not save if tasks are checked or not
+- If you have a particularly long task, it doesn't wrap down, it just extends past
+- If you have finished tasks on top of unfinished tasks, and delete it, an unfinished tasks will somehow be ticked too, probably indexing issue
 
 ## Deploy on
 
