@@ -6,6 +6,9 @@ You can access it [here](https://todo-list-app-zeta-liart.vercel.app/)
 
 *note: it is linked to one single database so everyone who access it can see the same tasks*
 
+![Screenshot 2024-05-20 113148](https://github.com/nclan1/todo-list-app/assets/144292887/c299c402-4d02-42c0-a544-b6a3a8a4797f)
+
+
 ## Features
 
 - Add new todo items
