@@ -30,6 +30,7 @@ You can access it [here](https://todo-list-app-zeta-liart.vercel.app/)
 - If you have a particularly long task, it doesn't wrap down, it just extends past
 - If you have finished tasks on top of unfinished tasks, and delete it, an unfinished tasks will somehow be ticked too, probably indexing issue
 
+
 ## Deploy on
 
 - Frontend - Vercel
@@ -41,3 +42,4 @@ You can access it [here](https://todo-list-app-zeta-liart.vercel.app/)
 - [Express](https://expressjs.com/)
 - [Node.js](https://nodejs.org/)
 - [MongoDB](https://www.mongodb.com/)
+- THEME INSPIRED BY [GMK OLIVIA](https://geekhack.org/index.php?topic=94903.0)
